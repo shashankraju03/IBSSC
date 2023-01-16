@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/Home"
+            android:checked="true" />
+        <!--
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_nav_user"
+            android:checkable="false"
+            android:title="@string/nav_my_profile" />-->
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_nav_about"
+            android:title="@string/About"
+            android:checkable="false" />
+        <item
+            android:id="@+id/dates"
+            android:icon="@drawable/important_dates"
+            android:title="@string/Dates"
+            android:checkable="true" />
+        <item
+            android:id="@+id/callp"
+            android:icon="@drawable/callp"
+            android:title="@string/callp"
+            android:checkable="false" />
+        <item
+            android:id="@+id/live_c"
+            android:icon="@drawable/live_c"
+            android:title="@string/live_c"
+            android:checkable="false" />
+        <item
+            android:id="@+id/awards"
+            android:icon="@drawable/awards"
+            android:title="@string/awards"
+            android:checkable="true" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="@string/help"
+            android:checkable="true" />
+        <!--
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_nav_sign_out"
+            android:checkable="false"
+            android:title="@string/nav_sign_out" />-->
+    </group>
+</menu>

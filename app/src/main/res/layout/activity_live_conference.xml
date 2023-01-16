@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.LiveConference"
+    android:background="@drawable/bgm">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_live_c"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/vv_light_blue"
+                app:popupTheme="@style/PopupOverlay"
+                app:titleTextColor="@color/black"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cream"
+                app:cardCornerRadius="10dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:text="@string/live_des"
+                            android:gravity="left"/>
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+            <!--Opening Ceremony-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/open_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/open"
+                            android:text="@string/open"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/expandable_open"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/open_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/open_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/join_open"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Tutorial 1-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tut1_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/tut1"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/tut1"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/exptut1"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut1_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut1_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/tut_join1"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Tutorial 2-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tut2_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/tut2"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/tut2"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/exptut2"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut2_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut2_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/tut_join2"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Tutorial 3-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tut3_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/tut3"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/tut3"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/exptut3"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut3_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut3_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/tut_join3"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Inauguration-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tut4_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Inauguration Ceremony"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/tut4"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/exptut4"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut4_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tut4_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/tut_join4"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Track1-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/track1_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/track1"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/track1"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/expandable"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track1_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track1_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/join1"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Track2-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/track2_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/track2"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/track2"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/expandable2"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track2_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track2_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/join2"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Track3-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/track3_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/track3"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/track3"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/expandable3"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track3_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track3_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/join3"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--Track 4-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/track4_card"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/track4"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/track4"
+                            android:drawableRight="@drawable/down"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/expandable4"
+                        android:layout_margin="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track4_d"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/calendar" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track4_status"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableLeft="@drawable/cat" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/light_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="15sp"
+                                android:id="@+id/join4"
+                                android:text="Join Meeting"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

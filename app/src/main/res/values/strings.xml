@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">IBSSC-2021</string>
+    <!--INTRO-->
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="st">Started!!</string>
+    <string name="or">OR</string>
+
+    <!--SIGNUP-->
+    <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="c_password">Confirm Password</string>
+    <string name="verfication_discription">please verify your email and note that relaunching or closing app without verifying email will void signup progress</string>
+    <string name="please_click_back_again_to_cancel">please click back again to cancel signup</string>
+
+    <!--SIGN-IN-->
+    <string name="sign_in_description_text">Enter your email and password to continue</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <!--LOADING-->
+    <string name="please_wait">Please Wait!</string>
+    <string name="please_click_back_again_to_exit">please click back again to exit</string>
+    <!--Nav Main Header-->
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_sign_out">Sign Out</string>
+    <string name="image_contentDescription">image</string>
+    <!--MyProfile-->
+    <string name="mobile">Mobile</string>
+    <string name="update">UPDATE</string>
+    <string name="my_profile">My Profile</string>
+    <string name="Home">Home</string>
+    <string name="Reset_Password">Reset Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password_description_text">Enter your email to get reset link</string>
+    <string name="send_link">Send Reset link</string>
+    <string name="zeros">0000000000</string>
+    <string name="count_desp">days :  hours :  min :  sec</string>
+    <string name="About">About</string>
+    <string name="home_discription">The 3rd IEEE Bombay Section Signature Conference (IBSSC-2021), is an international conference organized by IEEE Bombay Section and ABV-IIITM Gwalior, India. This flagship event will serve as a forum for disseminating the most recent advances in healthcare, agriculture, intelligent transportation, and renewable electronics, as well as potential research prospects. The city of stunning natural beauty and rich cultural heritage, Gwalior will be the host for the IBSSC-2021.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Dates">Important Dates</string>
+
+    <!--Important Dates-->
+    <string name="paper_sub_open">Paper Submission Open</string>
+    <string name="paper_sub_open_d">31st May 2021</string>
+    <string name="paper_sub_due">Paper Submission Due</string>
+    <string name="paper_sub_due_d">31st July 2021</string>
+    <string name="paper_acceptance_notification">Paper Acceptance Notification</string>
+    <string name="paper_acceptance_notification_d">10th September 2021</string>
+    <string name="camera_ready_paper_due">Camera-ready Paper Due</string>
+    <string name="camera_ready_paper_due_d">10th October 2021</string>
+    <string name="registration_open">Registration Open</string>
+    <string name="registration_open_d">15th September 2021</string>
+    <string name="early_bird_registration_closes">Early Bird Registration Closes</string>
+    <string name="early_bird_registration_closes_d">15th October 2021</string>
+    <string name="conference_date">Conference Date(s) </string>
+    <string name="conference_date_d">18th – 20th November, 2021</string>
+    <string name="awards">Awards</string>
+    <string name="best_paper_award">The Best Paper Award</string>
+    <string name="best_student_paper_award">The Best Student Paper Award</string>
+    <string name="best_poster_award">The Best Poster Award</string>
+    <string name="organizing_chairs">Organizing Chairs</string>
+    <string name="help">Help</string>
+    <string name="tech_chair">"Technical Program Chair "</string>
+    <string name="reach">Reach Us at</string>
+    <string name="callp">Call For Papers</string>
+    <string name="paper_des">This flagship conference of the IEEE\nBombay Section will feature a comprehensive high-quality technical program including a variety of tutorials and keynote talks.\nThe conference proceedings will be submitted to the IEEE Xplore® digital library. The scope of this conference has been kept wide and the following are the topics covered :</string>
+    <string name="track1">Track 1: Technology Solutions for Healthcare</string>
+    <string name="track2">Track 2: Intelligent Transportation and Internet of Vehicles</string>
+    <string name="track3">Track 3: Technology in Agriculture for Sustainable Development</string>
+    <string name="track4">Track 4: Green Electronics and Digital Transformation</string>
+    <string name="live_c">Live Conference</string>
+    <string name="live_des">Use the following tabs to join the respective track Conferences</string>
+    <string name="aboutiiitm">ABV-Indian Institute of Information Technology and Management (IIITM) in Gwalior, Madhya Pradesh is an autonomous institute set up by the Ministry of Human Resource Development (MHRD), Govt. of India in 1997. This institute was created for facilitating higher education, research, and consultancy in areas of information technology (IT) and business management. The Institute has established research collaborations with various Universities in the USA, France, and Japan. The students of the Institute have won various contests organized by Intel, Microsoft IBM,etc. and are getting placed with the reputed companies like TCS, Wipro, Amdocs, Microsoft, Conexant etc.</string>
+    <string name="aboutieee">IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. It\'s vision is to be essential to the global technical community and to technical professionals everywhere, and to be universally recognised for the contributions of technology and of technical professionals in improving global conditions. IEEE creates an environment where members collaborate on world-changing technologies – from computing and sustainable energy systems, to aerospace, communications, robotics, healthcare, and more. IEEE publishes more than 3.5 million documents in its Xplore Digital Library, has more than 1,671 standards and projects under development and publishes approximately 180 highly acclaimed transactions, journals.</string>
+    <string name="aboutieeeb">IEEE Bombay Section was formed on July 13, 1976 from the erstwhile India Section along with Delhi and Bangalore sections. It is fully volunteer driven. The Section’s Office is located in the Don Bosco Institute of Technology, Kurla(W), Mumbai. Bombay Section is one of the largest sections in India with 7000+ members, out of which about 4200 are student members spread over about 100 student branches all over the length and breadth of the section geography. The Bombay section conducted the first ever workshop in 1977, taking an initiative to introduce the Microprocessor and its application to our country. It hosted TENCON and many more prestigious conferences and other events thereafter.</string>
+    <string name="open">Opening Ceremony</string>
+    <string name="tut1">Tutorial 1</string>
+    <string name="tut2">Tutorial 2</string>
+    <string name="tut3">Tutorial 3</string>
+
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/intro_padding"
+    android:paddingRight="@dimen/intro_padding"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg"
+    tools:context=".activities.intro"
+    android:alpha="0.95">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/intro_logo_height"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:src="@drawable/app"
+        tools:ignore="ContentDescription" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btn_sign_in_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signin_button"
+                    android:textColor="@color/teal_700"
+                    android:text="@string/sign_in">
+                </Button>
+                <TextView
+                    android:id="@+id/t3_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:textSize="@dimen/Or_size"
+                    android:textColor="@color/black"
+                    android:text="@string/or" />
+
+                <Button
+                    android:layout_marginTop="15sp"
+                    android:id="@+id/btn_sign_up_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signup_button"
+                    android:text="@string/sign_up">
+                </Button>
+
+            </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+</RelativeLayout>

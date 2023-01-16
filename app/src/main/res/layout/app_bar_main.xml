@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/main_activity_toolBar"
+            app:popupTheme="@style/PopupOverlay"
+            android:background="@color/vv_light_blue"
+            tools:targetApi="lollipop">
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/Home"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/toolbar_title_text_size"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/vv_light_blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/clock_bg"
+                android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/count_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/time"
+            android:drawableTint="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:alpha="0.9"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/count_desp"
+            android:textColor="@color/black"
+            android:paddingLeft="50dp"
+            android:typeface="serif"
+            android:alpha="0.9"
+            />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/scrollingtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@color/vv_light_blue"
+        android:text="Announcements"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"/>
+    <!--<include layout="@layout/main_content"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container">
+
+    </FrameLayout>
+
+</LinearLayout>

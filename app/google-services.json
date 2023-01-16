@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846982114156",
+    "project_id": "ibssc-2021-656e9",
+    "storage_bucket": "ibssc-2021-656e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846982114156:android:8cabe0a41ec8c3665d2149",
+        "android_client_info": {
+          "package_name": "com.psr.ibssc_2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846982114156-4f4hsl362gigvgofp98vfbk920rduo8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq4UeRB_w6iEdiyev5g75HB8Urz-Aidb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846982114156-4f4hsl362gigvgofp98vfbk920rduo8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
